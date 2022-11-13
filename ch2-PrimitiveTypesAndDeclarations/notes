@@ -1,0 +1,38 @@
+The zero value - every unassigned variable has zero value
+Literals
+    Integer(123, 1_2_3, 0b101, 0o0712, 0xAB01)
+    Float(6.1, 6.03e23)
+    Rune('a', '\141', '\x61', '\u0061', '\U00000061', '\n', '\t', '\'', '\"', '\\')
+    String("Greetings and Salutations", "Greetings and \n\"Salutations\"", )
+           `Greetings and
+           "Salutations"`
+
+Boolean
+    var x // default false
+    var y = true
+
+Numeric
+    Integer
+        int8    -128 to 127
+        int16   -32_768 to 32_767
+        int32   -2_14_74_83_648 to 2_14_74_83_647
+        int64   –92_23_37_20_36_85_47_75_808 to –92_23_37_20_36_85_47_75_807
+        uin8    0 to 255
+        uint16   0 to 65_535
+        uint32  0 to 4_29_49_67_295
+        uint64  0 to 1_84_46_74_40_73_70_95_51_615
+
+    byte is same as uint8
+
+    int -> in 32-bit CPU it will use int32 and in 64-bit CPU it will use int64
+    uint -> similar to int
+
+    Float
+        float32 1.401298464324817070923729583289916131280e-45 to 3.40282346638528859811704183484516925440e+38
+        float64 4.940656458412465441765687928682213723651e-324 to 1.797693134862315708145274237317043567981e+308
+
+    Complex
+        complex64 uses float32
+        complex128 uses float64
+
+Go does not support automatically type promotion to convert into other type you need to write explicitly
