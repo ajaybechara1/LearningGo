@@ -16,3 +16,6 @@ go1.15.6 build
 go1.15.6 env GOROOT
 rm -rf $(go1.15.6 env GOROOT)
 rm $(go env GOPATH)/bin/go1.15.6
+
+TO detect shadow
+go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
